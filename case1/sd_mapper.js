@@ -29,5 +29,5 @@ var mapNum = (2 * thisMonth + thisHour) % 24;
 
 var imgStr = "<img src='sd_sky" + mapNum + ".png' />";
 
-document.getElementById("planisphere").insertAdjacentElement("afterbegin",imgStr);
+document.getElementById("planisphere").insertAdjacentHTML("afterbegin",imgStr);
 
