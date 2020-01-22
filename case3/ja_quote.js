@@ -17,11 +17,13 @@
 var randomQ = randomInt(0,10);
 
 function randomInt(lowest, size){
-var randy = math.floor(Math.random() * size + lowest);
-return randy;
+   var randy = Math.floor(Math.random()* size + lowest);
+   return randy;
 }
 
-var quoteElem = 
+var quoteElem = document.getElementsByTagName("quote")[0];
+
+quoteElem.innerHTML = getQuote(randomQ);
 
 function getQuote(n) {
    var quotes = [
